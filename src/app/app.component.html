@@ -1,0 +1,25 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+<p>
+	{{10+4}}
+	<!-- <img src="{{imageUrl}}" alt=""> -->
+</p>
+
+<input type="text" #welcomeMessage>
+<button (click)="onClick(welcomeMessage.value)">Click Me</button>
+<p>{{messageWelcome}}</p>
+
+<!-- <img [src]="imageUrl" alt=""> -->
+
+<p [class.special]="isSpecial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laboriosam,
+	libero, vero iusto illum quidem harum ea distinctio laudantium facere excepturi, amet quo. Delectus, reprehenderit
+	assumenda! Quod iusto omnis atque.</p>
+
+<p [style.color]="redColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nesciunt sapiente, quia
+	recusandae illo aliquam amet aperiam animi deleniti. Dolorum cum doloribus labore nam molestias architecto nobis
+	dolorem eum fuga!</p>
+
+<input type="text" [(ngModel)] = "username">
+<p>{{username}}</p>
